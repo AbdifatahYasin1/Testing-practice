@@ -1,6 +1,12 @@
-const capitalize = require("./capitalize");
-test("capitalize function works correctly", () => {
-  expect(capitalize("hello")).toBe("Hello");
-  expect(capitalize("cabdifataax")).toBe("Cabdifataax");
-  expect(capitalize("1234")).toBe("1234");
+const capitalize = require('./capitalize');
+test('capitalize function works correctly', () => {
+  // Arrange
+  const input = 'hello';
+  const expectedResult = 'Hello';
+
+  // Act
+  const result = capitalize(input);
+
+  // Assert
+  expect(result).toBe(expectedResult);
 });
